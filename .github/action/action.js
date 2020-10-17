@@ -28,7 +28,13 @@ const toBadgeMarkdown = (string, filename) => {
           return files.reduce(toBadgeTable, `| Name | Badge | File |\n| --- | --- | --- |\n`);
           break;
         case "{{badges.markdown}}":
-          return files.reduce(toBadgeMarkdown);
+          return files.reduce((string, file) => {
+            const name = badgeName(file);
+            const url = rawURL(file);
+            const md = `[${name}]: https://img.shields.io/endpoint?url=${url}\n`;
+            console.log("name", name, "url", url, "md", md);
+            return string += md;
+          });
           break;
       }
     });
