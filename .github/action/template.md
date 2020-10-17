@@ -17,10 +17,11 @@ A repository of Shields.io badges.
 
 
 ### Contribute
-- To contribute a badge just create your badge file in the root of this directory.
-- Don't worry about adding your badge to this README, the automated workflow will do that.
+For a full list of available properties see the [Shields.io Endpoint Docs](https://shields.io/endpoint)
+- To contribute a badge create a badge json file in the root of this directory.
 - The `style` property must be set to `for-the-badge`.
-- For full list of available properties see the [Shields.io Endpoint Docs](https://shields.io/endpoint)
+- No need to update this README, the automated workflow will do that for you.
+  > If your changes to a badge _don't_ render immediately it's _ok_, github caches raw content for 5 minutes; nothing we can do about it :unamused:
 
 
 ### Badges
