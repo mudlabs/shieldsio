@@ -5,7 +5,7 @@ on:
     branches:
       - badges
     paths:
-      - *.json
+      - /*.json
 
 jobs:
   update:
