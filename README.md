@@ -26,9 +26,10 @@ A repository of Shields.io badges.
 ### Badges
 | Name | Badge | File |
 | --- | --- | --- |
+| `github-action` | [![github-action]](./github-action.json) | [github-action.json](./github-action.json) |
 | `github-sponsor` | [![github-sponsor]](./github-sponsor.json) | [github-sponsor.json](./github-sponsor.json) |
 
 
 
 <!-- badges markdown goes here -->
-[github-sponsor]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/mudlabs/shields.io.endpoint/badges/github-sponsor.json
+[github-action]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/mudlabs/shields.io.endpoint/badges/github-action.json[github-sponsor]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/mudlabs/shields.io.endpoint/badges/github-sponsor.json
