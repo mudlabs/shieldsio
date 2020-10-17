@@ -3,9 +3,12 @@ const fs = require("fs")
 const badgeName = file => file.substring(0, file.lastIndexOf("."));
 const rawURL = file => `https://raw.githubusercontent.com/mudlabs/shields.io.endpoint/badges/${file}`;
 
-const toBadgeTable = (string, filename) => {
-  const name = badgeName(filename);
-  return string += `| \`${name}\` | [![${name}]](./${filename}) | [${filename}](./${filename}) |\n`;
+const toBadgeBlock = (string, filename) => {
+  const badge_name = badgeName(filename);
+  const badge = `> [![${name}]](./${filename})<br/>`;
+  const name = `> \`${badge_name}\`<br/>`;
+  const file = `> [${filename}](./${filename})<br/><br/>`;
+  return string += `${badge}${name}${file}\n`;
 };
 
 const toBadgeMarkdown = (string, filename) => {
@@ -22,7 +25,7 @@ const toBadgeMarkdown = (string, filename) => {
     const readme = template.replace(/\{\{(?:[a-z]|\.)+\}\}/g, match => {
       switch (match) {
         case "{{badges.table}}":
-          return files.reduce(toBadgeTable, `| Name | Badge | File |\n| --- | --- | --- |\n`);
+          return files.reduce(toBadgeBlock);
         case "{{badges.markdown}}":
           return files.reduce(toBadgeMarkdown, "");
       }
