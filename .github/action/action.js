@@ -11,7 +11,7 @@ const toBadgeTable = (string, filename) => {
 const toBadgeMarkdown = (string, filename) => {
   const name = badgeName(filename);
   const raw = rawURL(filename);
-  return string += `[${name}]: https://img.shields.io/endpoint?url=${raw}`;
+  return string += `[${name}]: https://img.shields.io/endpoint?url=${raw}\n`;
 };
 
 (async function(){
