@@ -20,24 +20,18 @@ const toBadgeMarkdown = (string, filename) => {
 
 (async function(){
   try {
-    // 1. get the readme template
     const template = await fs.promises.readFile(".github/action/template.md", { encoding: "utf-8" });
-    // 2. get all the json files in the root directory
     const all_files = await fs.promises.readdir("./");
     const files = all_files.filter(file => file.split(".").pop() === "json");
-    // 3. update the badges table with the current directory badges
-    // 4. update the badges markdown with the current directory badges
-    const readme = template.replace(/\{\{\S+\}\}/, match => {
-      let result;
+    const readme = template.replace(/\{\{(?:[a-z]|\.)+\}\}/g, match => {
       switch (match) {
         case "{{badges.table}}":
-          result = files.reduce(toBadgeTable, `| Name | Badge | File |\n| --- | --- | --- |\n`);
+          return files.reduce(toBadgeTable, `| Name | Badge | File |\n| --- | --- | --- |\n`);
           break;
         case "{{badges.markdown}}":
-          result = files.reduce(toBadgeMarkdown);
+          return files.reduce(toBadgeMarkdown);
           break;
       }
-      return result;
     });
     
     await fs.promises.writeFile("./README.md", readme);
