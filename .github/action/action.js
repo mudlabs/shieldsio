@@ -1,5 +1,3 @@
-const core = require("@actions/core");
-const github = require("@actions/github");
 const fs = require("fs")
 
 const badgeName = file => file.substring(0, file.lastIndexOf("."));
@@ -12,10 +10,8 @@ const toBadgeTable = (string, filename) => {
 
 const toBadgeMarkdown = (string, filename) => {
   const name = badgeName(filename);
-  return string += `[${name}]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/mudlabs/shields.io.endpoint/badges/${filename}`;
-  const url = rawURL(filename);
-  console.log("name", name, "url", url);
-  return string += `[${name}]: https://img.shields.io/endpoint?url=${url}\n`;
+  const raw = rawURL(filename);
+  return string += `[${name}]: https://img.shields.io/endpoint?url=${raw}`;
 };
 
 (async function(){
