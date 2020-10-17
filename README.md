@@ -31,4 +31,4 @@ A repository of Shields.io badges.
 
 
 <!-- badges markdown goes here -->
-[github-sponsor]
+[github-sponsor]: https://img.shields.io/endpoint?url=
