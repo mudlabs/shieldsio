@@ -1,0 +1,5 @@
+name: Update Readme
+description: Updates the README.md file whenever a badge file has been added, renamed, or removed.
+runs:
+  using: node12
+  main: action.js
