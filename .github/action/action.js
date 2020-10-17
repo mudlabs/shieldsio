@@ -7,7 +7,7 @@ const rawURL = file => `https://raw.githubusercontents.com/mudlabs/shields.io.en
 const badgeMarkdown = name => url => `[${name}]: https://img.shields.io/endpoint?url=${url}\n`;
 
 const toBadgeTable = (string, filename) => {
-  cosnt name = badgeName(filename);
+  const name = badgeName(filename);
   return string += `| \`${name}\` | ![${name}](./${filename}) | [${filename}](./${filename}) |\n`;
 };
 
