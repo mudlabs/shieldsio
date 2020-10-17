@@ -4,18 +4,17 @@ const fs = require("fs")
 
 const badgeName = file => file.substring(0, file.lastIndexOf("."));
 const rawURL = file => `https://raw.githubusercontents.com/mudlabs/shields.io.endpoint/badges/${file}`;
-const badgeMarkdown = name => url => `[${name}]: https://img.shields.io/endpoint?url=${url}\n`;
 
 const toBadgeTable = (string, filename) => {
   const name = badgeName(filename);
-  return string += `| \`${name}\` | ![${name}](./${filename}) | [${filename}](./${filename}) |\n`;
+  return string += `| \`${name}\` | ![${name}] | [${filename}](./${filename}) |\n`;
 };
 
 const toBadgeMarkdown = (string, filename) => {
   const name = badgeName(filename);
   const url = rawURL(filename);
-  const markdown = badgeMarkdown(name)(url);
-  return string += markdown;
+  console.log(`[${name}]: https://img.shields.io/endpoint?url=${url}\n`);
+  return string += `[${name}]: https://img.shields.io/endpoint?url=${url}\n`;
 };
 
 (async function(){
