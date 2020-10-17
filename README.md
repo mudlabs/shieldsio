@@ -24,10 +24,12 @@ A repository of Shields.io badges.
 
 
 ### Badges
-| Name | Badge | File |
-| --- | --- | --- |
-| `github-action` | [![github-action]](./github-action.json) | [github-action.json](./github-action.json) |
-| `github-sponsor` | [![github-sponsor]](./github-sponsor.json) | [github-sponsor.json](./github-sponsor.json) |
+> [![github-action]](./github-action.json)<br/>
+> `github-action`<br/>
+> [`github-action.json`](./github-action.json)<br/><br/>
+> [![github-sponsor]](./github-sponsor.json)<br/>
+> `github-sponsor`<br/>
+> [`github-sponsor.json`](./github-sponsor.json)<br/><br/>
 
 
 
