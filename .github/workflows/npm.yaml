@@ -3,7 +3,7 @@ name: NPM
 on:
   push:
     paths:
-      - .github/action/npm.config.yaml
+      - .github/action/npm.worker.config.yaml
 
 jobs:
   npm:
