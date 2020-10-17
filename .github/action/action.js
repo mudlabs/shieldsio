@@ -12,7 +12,7 @@ const toBadgeTable = (string, filename) => {
 
 const toBadgeMarkdown = (string, filename) => {
   const name = badgeName(filename);
-  return string += `[${name}]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/mudlabs/shields.io.endpoint/badges/github-sponsor.json`;
+  return string += `[${name}]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/mudlabs/shields.io.endpoint/badges/${filename}`;
   const url = rawURL(filename);
   console.log("name", name, "url", url);
   return string += `[${name}]: https://img.shields.io/endpoint?url=${url}\n`;
