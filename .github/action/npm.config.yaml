@@ -1,0 +1,7 @@
+clean: true
+init: false
+path: ./.github/action
+issue: 1
+install:
+  - "@actions/core"
+  - "@actions/github"
