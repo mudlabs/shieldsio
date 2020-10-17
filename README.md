@@ -12,8 +12,8 @@ A repository of Shields.io badges.
 - Each badge is generated from a `json` file.
 - [Shields.io](https://shields.io/) lets you display badges by passing a json endpoint.
 - The `url` for all badges in this repo looks like this;
-  - `https://raw.githubusercontent.com/mudlabs/shields.io.endpoint/badges/undefined.json`, where `undefined` is the badge filename.
-- So you would create the _shields.io_ badge with `https://img.shields.io/endpoint?url={{raw-badge-url}}`
+  - `https://raw.githubusercontent.com/mudlabs/shieldsio/endpoint/badges/{{badge}}.json`, where `{{badge}}` is the badge filename.
+- So you would create the _shields.io_ badge with `https://img.shields.io/endpoint?url={{raw-badge-url}}`.
 
 
 ### Contribute
@@ -24,16 +24,16 @@ A repository of Shields.io badges.
 
 
 ### Badges
-> [![github-action]](./github-action.json)<br/>
+> [![github-action]](./badges/github-action.json)<br/>
 > `github-action`<br/>
-> [`github-action.json`](./github-action.json)<br/><br/>
-> [![github-sponsor]](./github-sponsor.json)<br/>
+> [`github-action.json`](./badges/github-action.json)<br/><br/>
+> [![github-sponsor]](./badges/github-sponsor.json)<br/>
 > `github-sponsor`<br/>
-> [`github-sponsor.json`](./github-sponsor.json)<br/><br/>
+> [`github-sponsor.json`](./badges/github-sponsor.json)<br/><br/>
 
 
 
 <!-- badges markdown goes here -->
-[github-action]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/mudlabs/shields.io.endpoint/badges/github-action.json
-[github-sponsor]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/mudlabs/shields.io.endpoint/badges/github-sponsor.json
+[github-action]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/mudlabs/shieldsio/endpoint/badges/github-action.json
+[github-sponsor]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/mudlabs/shieldsio/endpoint/badges/github-sponsor.json
 
