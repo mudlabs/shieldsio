@@ -26,7 +26,7 @@ A repository of Shields.io badges.
 ### Badges
 | Name | Badge | File |
 | --- | --- | --- |
-| `github-sponsor` | ![github-sponsor] | [github-sponsor.json](./github-sponsor.json) |
+| `github-sponsor` | [![github-sponsor]](./github-sponsor.json) | [github-sponsor.json](./github-sponsor.json) |
 
 
 
