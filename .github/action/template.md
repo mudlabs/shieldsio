@@ -1,5 +1,4 @@
-# Shields.io Endpoint
-
+# Shieldsio
 A repository of Shields.io endpoints.
 
 ## Table of Contents
@@ -11,9 +10,8 @@ A repository of Shields.io endpoints.
 ### How to Use
 - Each badge is generated from a `json` file.
 - [Shields.io](https://shields.io/) lets you display badges by passing a json endpoint.
-- The `url` for all badges in this repo looks like this;
-  - `https://raw.githubusercontent.com/mudlabs/shieldsio/endpoint/badges/{{badge}}.json`, where `{{badge}}` is the badge filename.
-- So you would create the _shields.io_ badge with `https://img.shields.io/endpoint?url={{raw-badge-url}}`
+- The `url` for all badges in this repo look like `https://raw.githubusercontent.com/mudlabs/shieldsio/endpoint/badges/{{badge}}.json`, where `{{badge}}` is the badge filename.
+- So you would create the _shields.io_ badge with `https://img.shields.io/endpoint?url={{raw-badge-url}}`.
 
 
 ### Contribute
