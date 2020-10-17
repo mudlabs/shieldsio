@@ -12,7 +12,7 @@ A repository of Shields.io badges.
 - Each badge is generated from a `json` file.
 - [Shields.io](https://shields.io/) lets you display badges by passing a json endpoint.
 - The `url` for all badges in this repo looks like this;
-  - `https://raw.githubusercontent.com/mudlabs/shields.io.endpoint/badges/undefined.json`, where `{{badge}}` is the badge filename.
+  - `https://raw.githubusercontent.com/mudlabs/shields.io.endpoint/badges/undefined.json`, where `undefined` is the badge filename.
 - So you would create the _shields.io_ badge with `https://img.shields.io/endpoint?url={{raw-badge-url}}`
 
 
@@ -24,8 +24,11 @@ A repository of Shields.io badges.
 
 
 ### Badges
-{{badges.table}}
+| Name | Badge | File |
+| --- | --- | --- |
+| `github-sponsor` | ![github-sponsor](./github-sponsor.json) | [github-sponsor.json](./github-sponsor.json) |
+
 
 
 <!-- badges markdown goes here -->
-{{badges.markdown}}
+github-sponsor.json
