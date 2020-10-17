@@ -1,6 +1,6 @@
 # Shields.io Endpoint
 
-A repository of Shields.io badges.
+A repository of Shields.io endpoints.
 
 ## Table of Contents
 - [How to Use](#how-to-use)
