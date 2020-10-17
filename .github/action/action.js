@@ -37,7 +37,9 @@ const toBadgeMarkdown = (string, filename) => {
       }
     });
     
-    await fs.promises.writeFile("./README.md", "Heel");
+    console.log(readme);
+    
+    await fs.promises.writeFile("./README.md", readme);
   } catch (error) {
     core.setFailed(error);
   }
