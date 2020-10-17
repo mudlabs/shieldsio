@@ -1,0 +1,25 @@
+name: Badges
+
+on:
+  pull-request:
+    branches:
+      - badges
+    paths:
+      - *.json
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+      - name: Diffy
+        uses: mudlabs/diffy@v1.0.0
+        id: diffy
+      - name: Update Readme
+        uses: ./.github/action
+        if: !steps.diffy.outputs.modified
+      - name: Add and Commit
+        uses: EndBug/add-and-commit@v5.1.0
+        if: success()
