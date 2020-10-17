@@ -26,7 +26,6 @@ const toBadgeMarkdown = (string, filename) => {
       switch (match) {
         case "{{badges.table}}":
           return files.reduce(toBadgeTable, `| Name | Badge | File |\n| --- | --- | --- |\n`);
-          break;
         case "{{badges.markdown}}":
           return files.reduce((string, file) => {
             const name = badgeName(file);
@@ -35,11 +34,10 @@ const toBadgeMarkdown = (string, filename) => {
             console.log("name", name, "url", url, "md", md);
             return string += md;
           });
-          break;
       }
     });
     
-    await fs.promises.writeFile("./README.md", readme);
+    await fs.promises.writeFile("./README.md", "Heel");
   } catch (error) {
     core.setFailed(error);
   }
