@@ -3,6 +3,7 @@
   "label": "",
   "message": "NPM",
   "namedLogo": "npm",
-  "color": "24292e",
+  "color": "faebeb",
+  "labelColor": "cb3837",
   "style": "for-the-badge"
 }
