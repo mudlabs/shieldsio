@@ -7,8 +7,8 @@ const toBadgeBlock = (string, filename) => {
   console.log(string, filename)
   const badge_name = badgeName(filename);
   const badge = `> [![${badge_name}]](./badges/${filename})<br/>`;
-  const name = `> \`${badge_name}\`<br/>`;
-  const file = `> [${filename}](./badges/${filename})<br/><br/>`;
+  const name = `\`${badge_name}\`<br/>`;
+  const file = `[${filename}](./badges/${filename})<br/><br/>`;
   return string += `${badge}${name}${file}\n`;
 };
 
