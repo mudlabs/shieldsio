@@ -1,8 +1,7 @@
-
 {
   "schemaVersion": 1,
-  "label": "",
-  "message": "NPM",
+  "label": "NPM",
+  "message": "version",
   "color": "faebeb",
-  "style": "for-the-badge",
+  "style": "for-the-badge"
 }
