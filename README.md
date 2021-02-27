@@ -23,8 +23,8 @@ For a full list of available properties see the [Shields.io Endpoint Docs](https
 
 
 ### Badges
-github-action.json> [![github-sponsor]](./github-sponsor.json)<br/>> `github-sponsor`<br/>> [github-sponsor.json](./github-sponsor.json)<br/><br/>
-> [![npm-version]](./npm-version.json)<br/>> `npm-version`<br/>> [npm-version.json](./npm-version.json)<br/><br/>
+github-action.json> [![github-sponsor]](./badges/github-sponsor.json)<br/>> `github-sponsor`<br/>> [github-sponsor.json](./badges/github-sponsor.json)<br/><br/>
+> [![npm-version]](./badges/npm-version.json)<br/>> `npm-version`<br/>> [npm-version.json](./badges/npm-version.json)<br/><br/>
 
 
 
