@@ -23,8 +23,12 @@ For a full list of available properties see the [Shields.io Endpoint Docs](https
 
 
 ### Badges
-{{badges.table}}
+github-action.json> [![github-sponsor]](./github-sponsor.json)<br/>> `github-sponsor`<br/>> [github-sponsor.json](./github-sponsor.json)<br/><br/>
+> [![npm-version]](./npm-version.json)<br/>> `npm-version`<br/>> [npm-version.json](./npm-version.json)<br/><br/>
+
 
 
 <!-- badges markdown goes here -->
-{{badges.markdown}}
+github-action.json[github-sponsor]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/mudlabs/shieldsio/endpoint/badges/github-sponsor.json
+[npm-version]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/mudlabs/shieldsio/endpoint/badges/npm-version.json
+
