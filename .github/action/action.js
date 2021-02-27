@@ -20,7 +20,7 @@ const toBadgeMarkdown = (string, filename) => {
 (async function(){
   try {
     const template = await fs.promises.readFile(".github/action/template.md", { encoding: "utf-8" });
-    const all_files = await fs.promises.readdir("./");
+    const all_files = await fs.promises.readdir("./badges/");
     const files = all_files.filter(file => file.split(".").pop() === "json");
     const readme = template.replace(/\{\{badge\.(?:table|markdown)\}\}/g, match => {
       switch (match) {
