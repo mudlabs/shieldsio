@@ -26,9 +26,9 @@ const toBadgeMarkdown = (string, filename) => {
     const readme = template.replace(/\{\{badges\.(?:table|markdown)\}\}/g, match => {
       switch (match) {
         case "{{badges.table}}":
-          return files.reduce(toBadgeBlock);
+          return files.reduce(toBadgeBlock, "");
         case "{{badges.markdown}}":
-          return files.reduce(toBadgeMarkdown);
+          return files.reduce(toBadgeMarkdown, "");
       }
     });
     
