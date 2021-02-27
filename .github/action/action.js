@@ -4,6 +4,7 @@ const badgeName = file => file.substring(0, file.lastIndexOf("."));
 const rawURL = file => `https://raw.githubusercontent.com/mudlabs/shieldsio/endpoint/badges/${file}`;
 
 const toBadgeBlock = (string, filename) => {
+  console.log(string, filename)
   const badge_name = badgeName(filename);
   const badge = `> [![${badge_name}]](./${filename})<br/>`;
   const name = `> \`${badge_name}\`<br/>`;
