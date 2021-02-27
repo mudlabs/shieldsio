@@ -3,7 +3,7 @@ name: Badges
 on:
   push:
     branches:
-      - badges
+      - endpoint
     paths:
       - 'badges/*.json'
 
