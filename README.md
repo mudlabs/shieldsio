@@ -16,7 +16,7 @@ A repository of Shields.io endpoints.
 
 ### Contribute
 For a full list of available properties see the [Shields.io Endpoint Docs](https://shields.io/endpoint)
-- To contribute a badge create a badge json file in the root of this directory.
+- To contribute a badge create a badge json file in the `badges` directory.
 - The `style` property must be set to `for-the-badge`.
 - No need to update this README, the automated workflow will do that for you.
   > If your changes to a badge _don't_ render immediately it's _ok_, github caches raw content for 5 minutes; nothing we can do about it :unamused:
