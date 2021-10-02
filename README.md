@@ -26,6 +26,7 @@ For a full list of available properties see the [Shields.io Endpoint Docs](https
 > [![github-action]](./badges/github-action.json)<br/>`github-action`<br/>[github-action.json](./badges/github-action.json)<br/><br/>
 > [![github-sponsor]](./badges/github-sponsor.json)<br/>`github-sponsor`<br/>[github-sponsor.json](./badges/github-sponsor.json)<br/><br/>
 > [![npm-version]](./badges/npm-version.json)<br/>`npm-version`<br/>[npm-version.json](./badges/npm-version.json)<br/><br/>
+> [![python]](./badges/python.json)<br/>`python`<br/>[python.json](./badges/python.json)<br/><br/>
 
 
 
@@ -33,4 +34,5 @@ For a full list of available properties see the [Shields.io Endpoint Docs](https
 [github-action]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/mudlabs/shieldsio/endpoint/badges/github-action.json
 [github-sponsor]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/mudlabs/shieldsio/endpoint/badges/github-sponsor.json
 [npm-version]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/mudlabs/shieldsio/endpoint/badges/npm-version.json
+[python]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/mudlabs/shieldsio/endpoint/badges/python.json
 
